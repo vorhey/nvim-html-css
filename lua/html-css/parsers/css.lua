@@ -16,6 +16,17 @@ css.query = [[
 
  ((rule_set
 	 (selectors
+		 (class_selector
+			 (class_name) @class_name)
+		 ","
+		 (class_selector
+			 (class_name))
+		 ) @class_decl
+	 (block) @class_block
+	 ))
+
+ ((rule_set
+	 (selectors
 		 (id_selector
 			 (id_name) @id_name)
 		 ) @id_decl
